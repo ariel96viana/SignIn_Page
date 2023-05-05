@@ -26,7 +26,9 @@ $(document).ready(function () {
     },
 
     submitHandler: function (form) {
-      console.log(form);
+      const userName = $(inputName).val();
+      alert(`Seja muito bem vindo(a), ${userName}.`);
+      $("input").val("");
     },
     invalidHandler: function (evento, validation) {
       let invalidFields = validation.numberOfInvalids();
